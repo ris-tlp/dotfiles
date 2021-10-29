@@ -1,3 +1,1 @@
-# dotfiles
-
-Dotfiles of various customized components in my Ubuntu installation.
+Dotfiles for various customized components in my MacOS and Ubuntu builds
