@@ -12,20 +12,14 @@ fi
 export ZSH="/Users/ris-tlp/.oh-my-zsh"
 export PATH="$PATH:/Users/ris-tlp/Development/flutter/bin"
 
-#ZSH_THEME="powerlevel10k/powerlevel10k"
-ZSH_THEME="spaceship"
-SPACESHIP_USER_SHOW="always"
-SPACESHIP_DOCKER_SHOW="always"
-SPACESHIP_CONDA_SHOW="always"
-SPACESHIP_USER_COLOR="yellow"
-SPACESHIP_PROMPT_SEPARATE_LINE=false
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git command-not-found docker python )
+plugins=(git command-not-found docker python pipenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -52,3 +46,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ris-tlp/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ris-tlp/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ris-tlp/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ris-tlp/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
