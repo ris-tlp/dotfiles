@@ -27,9 +27,9 @@ yabai -m config focus_follows_mouse autoraise
 
 # general space settings
 yabai -m config layout bsp
-yabai -m config top_padding 2
+yabai -m config top_padding 8
 yabai -m config bottom_padding 2
-yabai -m config left_padding 2
-yabai -m config right_padding 2
+yabai -m config left_padding 13
+yabai -m config right_padding 13
 yabai -m config window_gap 8
 echo "yabai configuration loaded.."
