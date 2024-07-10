@@ -18,37 +18,37 @@ SHADOW=on
 
 # Setting up the general bar appearance and default values
 sketchybar --bar     height=39                                           \
-                     corner_radius=11                                    \
-                     border_width=0                                      \
-                     margin=10                                           \
-                     blur_radius=50                                      \
-                     position=top                                        \
-                     padding_left=10                                     \
-                     padding_right=10                                    \
-                     color=$BAR_COLOR                                    \
-                     topmost=off                                         \
-                     font_smoothing=off                                  \
-                     y_offset=10                                         \
-                     shadow=$SHADOW                                      \
-                     notch_width=200                                     \
-                                                                         \
-           --default drawing=on                                          \
-                     updates=when_shown                                  \
-                     label.font="$FONT:Semibold:13.0"                    \
-                     icon.font="$FONT:Bold:14.0"                         \
-                     icon.color=$ICON_COLOR                              \
-                     label.color=$LABEL_COLOR                            \
-                     icon.padding_left=$PADDINGS                         \
-                     icon.padding_right=$PADDINGS                        \
-                     label.padding_left=$PADDINGS                        \
-                     label.padding_right=$PADDINGS                       \
-                     background.padding_right=$PADDINGS                  \
-                     background.padding_left=$PADDINGS                   \
-                     popup.background.border_width=$POPUP_BORDER_WIDTH   \
-                     popup.background.corner_radius=$POPUP_CORNER_RADIUS \
-                     popup.background.border_color=$POPUP_BORDER_COLOR   \
-                     popup.background.color=$POPUP_BACKGROUND_COLOR      \
-                     popup.background.shadow.drawing=$SHADOW             \
+corner_radius=11                                    \
+border_width=0                                      \
+margin=10                                           \
+blur_radius=50                                      \
+position=top                                        \
+padding_left=10                                     \
+padding_right=10                                    \
+color=$BAR_COLOR                                    \
+topmost=off                                         \
+font_smoothing=off                                  \
+y_offset=10                                         \
+shadow=$SHADOW                                      \
+notch_width=200                                     \
+\
+--default drawing=on                                          \
+updates=when_shown                                  \
+label.font="$FONT:Semibold:13.0"                    \
+icon.font="$FONT:Bold:14.0"                         \
+icon.color=$ICON_COLOR                              \
+label.color=$LABEL_COLOR                            \
+icon.padding_left=$PADDINGS                         \
+icon.padding_right=$PADDINGS                        \
+label.padding_left=$PADDINGS                        \
+label.padding_right=$PADDINGS                       \
+background.padding_right=$PADDINGS                  \
+background.padding_left=$PADDINGS                   \
+popup.background.border_width=$POPUP_BORDER_WIDTH   \
+popup.background.corner_radius=$POPUP_CORNER_RADIUS \
+popup.background.border_color=$POPUP_BORDER_COLOR   \
+popup.background.color=$POPUP_BACKGROUND_COLOR      \
+popup.background.shadow.drawing=$SHADOW             \
 
 # Left
 source "$ITEM_DIR/apple.sh"

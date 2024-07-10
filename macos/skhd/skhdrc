@@ -101,7 +101,9 @@
 #                   yabai -m space --focus "${index}"
 
 
-shift + cmd - n : yabai -m space --create
+shift + alt - n : yabai -m space --create
+
+# fast focus window man jones
 
 # fast focus desktop
 cmd + alt - x : yabai -m space --focus recent
@@ -115,13 +117,13 @@ cmd + shift - 7 : yabai -m space --focus 7
 
 
 # send window to desktop and follow focus
-shift + cmd + alt - 1 : yabai -m window --space 1; yabai -m space --focus 1
-shift + cmd + alt - 2 : yabai -m window --space 2; yabai -m space --focus 2
-shift + cmd + alt - 3 : yabai -m window --space 3; yabai -m space --focus 3
-shift + cmd + alt - 4 : yabai -m window --space 4; yabai -m space --focus 4
-shift + cmd + alt - 5 : yabai -m window --space 5; yabai -m space --focus 5
-shift + cmd + alt - 6 : yabai -m window --space 6; yabai -m space --focus 6
-shift + cmd + alt - 7 : yabai -m window --space 7; yabai -m space --focus 7
+cmd + ctrl - 1 : yabai -m window --space 1; yabai -m space --focus 1
+cmd + ctrl - 2 : yabai -m window --space 2; yabai -m space --focus 2
+cmd + ctrl - 3 : yabai -m window --space 3; yabai -m space --focus 3
+cmd + ctrl - 4 : yabai -m window --space 4; yabai -m space --focus 4
+cmd + ctrl - 5 : yabai -m window --space 5; yabai -m space --focus 5
+cmd + ctrl - 6 : yabai -m window --space 6; yabai -m space --focus 6
+cmd + ctrl - 7 : yabai -m window --space 7; yabai -m space --focus 7
 
 
 # focus monitor
@@ -138,12 +140,14 @@ ctrl + alt - 3  : yabai -m display --focus 3
 # shift + ctrl - a : yabai -m window --move rel:-20:0
 # shift + ctrl - s : yabai -m window --move rel:0:20
 
-# increase window sizeA
-shift + alt - a : yabai -m window --resize left:-20:0
-# shift + alt - w : yabai -m window --resize top:0:-20
+# increase window size
+shift + alt - h : yabai -m window --resize left:-20:0
+# shift + alt - l : yabai -m window --resize left:0:20
+shift + alt - j : yabai -m window --resize top:0:-20
 
 # decrease window size
-# shift + cmd - w : yabai -m window --resize top:0:20
+shift + alt - l : yabai -m window --resize left:20:0
+shift + alt - k : yabai -m window --resize top:0:20
 
 # set insertion point in focused container
 # ctrl + alt - h : yabai -m window --insert west
