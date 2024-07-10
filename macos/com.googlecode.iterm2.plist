@@ -2055,11 +2055,13 @@
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Option Key Sends</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<false/>
+			<key>Right Option Key Changeable</key>
+			<true/>
 			<key>Right Option Key Sends</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Rows</key>
 			<integer>25</integer>
 			<key>Screen</key>
@@ -2171,9 +2173,13 @@
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
 	<true/>
+	<key>ShowFullScreenTabBar</key>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 </dict>
 </plist>
