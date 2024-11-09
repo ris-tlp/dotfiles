@@ -1,8 +1,10 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
+
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # If you come from bash you might have to change your $PATH.
@@ -11,18 +13,34 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ris-tlp/.oh-my-zsh"
 export PATH="$PATH:/Users/ris-tlp/Development/flutter/bin"
+export SSLKEYLOGFILE="/Users/ris-tlp/ssl.log"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
+
+
+# Aliases
+alias yrestart="yabai --restart-service"
+alias ystart="yabai --start-service"
+alias ystop="yabai --stop-service"
+alias ls="eza --icons"
+
+# NOTE TAKING
+export NOTES_DIRECTORY=/Users/ris-tlp/"My Drive"/UMD
+export EDITOR=vim
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git command-not-found docker python pipenv)
+plugins=(git command-not-found docker python pipenv virtualenv)
+
+
+# Aliases for ez links
+
+
 
 source $ZSH/oh-my-zsh.sh
-
 
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -52,3 +70,14 @@ if [ -f '/Users/ris-tlp/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Use
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/ris-tlp/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ris-tlp/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+alias ls="eza --icons"
+alias venv="source .venv/bin/activate"
+
+
+# Created by `pipx` on 2024-07-09 18:16:29
+export PATH="$PATH:/Users/ris-tlp/.local/bin"
