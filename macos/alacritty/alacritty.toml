@@ -1,0 +1,22 @@
+[general]
+import = [
+    "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[terminal.shell]
+program = "/bin/zsh"
+args = ["-l"]
+
+[font]
+normal = { family = "Hack Nerd Font Mono" }
+size = 12.5
+
+[window]
+decorations = "None"
+dynamic_padding = true
+padding = { x = 5, y = 5 }
+opacity = 0.65
+blur = true
+
+[cursor]
+style = { shape = "Underline" }
