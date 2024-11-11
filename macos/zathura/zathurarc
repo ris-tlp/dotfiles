@@ -1,0 +1,23 @@
+include catppuccin-mocha
+
+set sandbox none
+set statusbar-h-padding 20
+set statusbar-v-padding 5
+set page-padding 5
+set window-title-home-tilde true
+set statusbar-basename true
+set adjust-open "best-fit"
+set selection-clipboard clipboard
+
+
+map u scroll half-up
+map d scroll half-down
+map D toggle_page_mode
+map r reload
+map R rotate
+map - zoom in
+map = zoom out
+map i recolor
+map g goto top
+map bar toggle_statusbar
+
