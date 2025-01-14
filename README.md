@@ -7,8 +7,9 @@
  Cat replacement: [bat](https://github.com/sharkdp/bat)  
  File Manager: [nnn](https://github.com/jarun/nnn)  
  Keybinds: [skhd](https://github.com/koekeishiya/skhd)  
- PDF Viewer: [Zathura](https://github.com/zegervdv/homebrew-zathura)
+ PDF Viewer: [Zathura](https://github.com/zegervdv/homebrew-zathura)  
+ Music Player: [YouTube Music](https://github.com/th-ch/youtube-music) and [Cava](https://github.com/karlstav/cava)
 
-![alt text](https://i.imgur.com/3BtOZYQ.jpeg)
+![alt text](https://i.imgur.com/mDFonYq.jpeg)
 
 
