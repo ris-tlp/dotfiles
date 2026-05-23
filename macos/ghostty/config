@@ -1,0 +1,25 @@
+# Appearance
+theme = Catppuccin Mocha
+background-opacity = 0.8
+background-blur = true
+background-blur-radius = 20
+macos-titlebar-style = hidden
+
+# Font
+font-family = JetBrains Mono
+font-size = 14
+font-thicken = true
+
+# Cursor
+cursor-style = block
+cursor-style-blink = false
+
+# Window
+window-padding-x = 12
+window-padding-y = 12
+window-inherit-working-directory = true
+confirm-close-surface = false
+
+# Mouse & Clipboard
+copy-on-select = true
+mouse-hide-while-typing = true
